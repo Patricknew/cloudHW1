@@ -1,1 +1,11 @@
- Hello
+HW1 - Cloud Computing
+Zoltan Onodi-Szucs, zo2131
+Patrick Cao, xc2331
+
+The flask website is initiated with application.py which renders the html template.
+On the website, keywords can be selected to show tweets with it on the map. The tweets
+are queried with elasticsearch. Each tweets text is stored as a string and the position
+as geo_points. When clicking on the map, every tweet within 100 kms is returned.
+
+The tweets are collected with the twitter_streaming.py, which append the tweets to a textfile.
+The tweets are uploaded with the upload_elastic.py 
